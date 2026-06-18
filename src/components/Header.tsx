@@ -113,10 +113,10 @@ export default function Header() {
               </button>
               <div className="absolute right-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="bg-white shadow-xl flex flex-col w-32 border border-slate-100/50">
-                  <a href="https://worldwidemusic-en.netlify.app/" target="_blank" rel="noopener noreferrer" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center border-b border-slate-200 transition-colors">
+                  <a href="https://worldwidemusic-en.netlify.app/" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center border-b border-slate-200 transition-colors">
                     English
                   </a>
-                  <a href="https://worldwidemusic-kr.netlify.app/" target="_blank" rel="noopener noreferrer" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center transition-colors">
+                  <a href="https://worldwidemusic-kr.netlify.app/" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center transition-colors">
                     Korean
                   </a>
                 </div>
@@ -172,10 +172,10 @@ export default function Header() {
                 ENGLISH
               </div>
               <div className="flex flex-col ml-6 gap-3">
-                <a href="https://worldwidemusic-en.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
+                <a href="https://worldwidemusic-en.netlify.app/" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
                   English
                 </a>
-                <a href="https://worldwidemusic-kr.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
+                <a href="https://worldwidemusic-kr.netlify.app/" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
                   Korean
                 </a>
               </div>
