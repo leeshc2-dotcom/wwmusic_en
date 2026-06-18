@@ -116,7 +116,7 @@ export default function Header() {
                   <a href="https://wwmusic-test.store/" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center border-b border-slate-200 transition-colors">
                     English
                   </a>
-                  <a href="https://worldwidemusic-kr.netlify.app/" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center transition-colors">
+                  <a href="https://wwmusic-kr.leeshc2.workers.dev/" className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center transition-colors">
                     Korean
                   </a>
                 </div>
@@ -175,7 +175,7 @@ export default function Header() {
                 <a href="https://wwmusic-test.store/" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
                   English
                 </a>
-                <a href="https://worldwidemusic-kr.netlify.app/" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
+                <a href="https://wwmusic-kr.leeshc2.workers.dev/" className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors">
                   Korean
                 </a>
               </div>
