@@ -82,7 +82,7 @@ export default function Header() {
               <span className="font-sans font-extrabold text-[1.375rem] tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-200 bg-clip-text text-transparent">
                 WorldWide
               </span>
-              <span className="hidden sm:block font-mono text-[9px] uppercase tracking-[0.25em] text-amber-500 font-bold">
+              <span className="hidden sm:block font-mono text-xs uppercase tracking-[0.25em] text-amber-500 font-bold">
                 MUSIC GROUP
               </span>
             </div>
