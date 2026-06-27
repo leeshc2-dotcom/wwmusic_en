@@ -6,13 +6,7 @@
 import React from "react";
 import { motion } from "motion/react";
 import { trustPillars } from "../data";
-import { ShieldCheck, Zap, Languages, Check, ArrowRight } from "lucide-react";
-
-const iconMap: Record<string, React.ComponentType<any>> = {
-  ShieldCheck: ShieldCheck,
-  Zap: Zap,
-  Languages: Languages,
-};
+import { Check } from "lucide-react";
 
 export default function TrustSection() {
   return (
@@ -58,7 +52,6 @@ export default function TrustSection() {
 
           <div className="lg:col-span-8 flex flex-col gap-6">
             {trustPillars.map((pillar, idx) => {
-              const PillarIcon = iconMap[pillar.icon] || ShieldCheck;
               return (
                 <motion.div
                   key={pillar.title}
@@ -69,26 +62,21 @@ export default function TrustSection() {
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                   className="bg-slate-950/90 border border-slate-800/80 hover:border-slate-700/80 p-6 sm:p-8 rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 sm:gap-8 transition-all duration-300 group hover:shadow-xl hover:shadow-slate-950/40"
                 >
-                  <div className="flex items-start gap-5 max-w-xl">
-                    <div className="w-12 h-12 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-amber-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300 shrink-0">
-                      <PillarIcon className="w-5.5 h-5.5" />
-                    </div>
-                    <div>
-                      <h3 className="font-sans font-extrabold text-base text-white tracking-tight">
-                        {pillar.title}
-                      </h3>
-                      <p className="mt-2 font-sans text-sm text-slate-400 leading-relaxed">
-                        {pillar.description}
-                      </p>
-                    </div>
+                  <div className="max-w-xl">
+                    <h3 className="font-sans font-extrabold text-base sm:text-lg text-white tracking-tight">
+                      {pillar.title}
+                    </h3>
+                    <p className="mt-2 font-sans text-sm text-slate-400 leading-relaxed">
+                      {pillar.description}
+                    </p>
                   </div>
 
                   {pillar.metric && (
-                    <div className="border-l border-slate-800/80 pl-6 sm:border-l-2 sm:border-slate-800/60 w-full sm:w-auto text-left shrink-0">
+                    <div className="border-l border-slate-800/80 pl-4 sm:pl-6 sm:border-l-2 sm:border-slate-800/60 w-full sm:w-auto text-left shrink-0">
                       <div className="font-sans font-black text-2xl sm:text-3xl text-amber-500 tracking-tight">
                         {pillar.metric}
                       </div>
-                      <div className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mt-0.5 max-w-[120px] sm:max-w-none">
+                      <div className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mt-0.5">
                         {pillar.metricLabel}
                       </div>
                     </div>
