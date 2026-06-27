@@ -74,8 +74,11 @@ export default function Header() {
           {/* Logo */}
           <a
             id="logo-link"
-            href="#home"
-            onClick={(e) => handleScrollTo(e, "home")}
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.reload();
+            }}
             className="flex items-center gap-2.5 group focus:outline-none"
           >
             <div className="relative w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-lg group-hover:scale-105 transition-all duration-300 overflow-hidden">
