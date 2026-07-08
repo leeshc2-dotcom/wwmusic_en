@@ -4,8 +4,17 @@ import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
 import nodemailer from "nodemailer";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const getDirname = () => {
+  if (typeof __dirname !== "undefined") {
+    return __dirname;
+  }
+  try {
+    return path.dirname(fileURLToPath(import.meta.url));
+  } catch (e) {
+    return process.cwd();
+  }
+};
+const __dirname_resolved = getDirname();
 
 async function startServer() {
   const app = express();
