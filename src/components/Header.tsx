@@ -124,13 +124,13 @@ export default function Header() {
               <div className="absolute right-0 top-full mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="bg-white shadow-xl flex flex-col w-32 border border-slate-100/50">
                   <a
-                    href="https://wwmusic-test.store/"
+                    href="https://wwmg.co.kr"
                     className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center border-b border-slate-200 transition-colors"
                   >
                     English
                   </a>
                   <a
-                    href="https://kr.wwmusic-test.store/"
+                    href="https://kr.wwmg.co.kr"
                     className="px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 font-sans font-bold text-center transition-colors"
                   >
                     Korean
@@ -193,14 +193,14 @@ export default function Header() {
               </div>
               <div className="flex flex-col ml-6 gap-3">
                 <a
-                  href="https://wwmusic-test.store/"
+                  href="https://wwmg.co.kr"
                   onClick={() => setIsOpen(false)}
                   className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors block w-full"
                 >
                   English
                 </a>
                 <a
-                  href="https://kr.wwmusic-test.store/"
+                  href="https://kr.wwmg.co.kr"
                   onClick={() => setIsOpen(false)}
                   className="text-slate-300 hover:text-white font-sans font-medium text-sm transition-colors block w-full"
                 >
