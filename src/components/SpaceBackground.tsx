@@ -21,24 +21,14 @@ export default function SpaceBackground() {
   return (
     <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
       {stars.map((star) => (
-        <motion.div
+        <div
           key={star.id}
-          className="absolute bg-white rounded-full shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+          className="absolute bg-white/40 rounded-full"
           style={{
             top: star.top,
             left: star.left,
             width: star.size,
             height: star.size,
-          }}
-          animate={{
-            opacity: [0.1, 0.8, 0.1],
-            scale: [0.8, 1.2, 0.8],
-          }}
-          transition={{
-            duration: star.duration,
-            repeat: Infinity,
-            delay: star.delay,
-            ease: "easeInOut",
           }}
         />
       ))}
