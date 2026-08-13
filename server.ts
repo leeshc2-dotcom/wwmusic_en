@@ -48,7 +48,7 @@ async function startServer() {
       const mailOptions = {
         from: `"${name}" <${smtpUser}>`,
         replyTo: email,
-        to: "leeshc0@naver.com",
+        to: "wwmgpublishing@gmail.com",
         subject: `[Website Inquiry] ${subject || 'New Message'}`,
         text: `You have received a new message from the contact form.\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
         html: `<p>You have received a new message from the contact form.</p>

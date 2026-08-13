@@ -84,7 +84,7 @@ export default function Contact() {
             <div className="flex flex-col gap-4 mt-4">
               <h3 className="text-white text-lg font-bold">Direct Contact</h3>
               <a
-                href="mailto:leeshc0@naver.com?subject=Sub-Publishing%20Representation%20Inquiry"
+                href="mailto:wwmgpublishing@gmail.com?subject=Sub-Publishing%20Representation%20Inquiry"
                 className="flex items-center gap-5 bg-slate-950/50 border border-slate-800/80 rounded-2xl px-6 py-5 hover:border-amber-500/50 transition-all group cursor-pointer w-full shadow-lg"
               >
                 <div className="w-12 h-12 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-amber-500 shrink-0 group-hover:scale-110 transition-transform">
@@ -95,7 +95,7 @@ export default function Contact() {
                     General Inquiries
                   </h4>
                   <p className="mt-1 font-sans text-sm text-slate-400 font-medium group-hover:text-amber-400 transition-colors break-all sm:break-normal">
-                    leeshc0@naver.com
+                    wwmgpublishing@gmail.com
                   </p>
                 </div>
               </a>
