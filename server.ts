@@ -29,12 +29,12 @@ async function startServer() {
     console.log(`[Contact Form Received] Name: ${name}, Email: ${email}`);
 
     try {
-      const smtpUser = process.env.SMTP_USER || "leeshc0@naver.com";
-      const smtpPass = process.env.SMTP_PASS || "3P8B73TZMX6L";
+      const smtpUser = process.env.SMTP_USER || "Jude.lee@wwmg.co.kr";
+      const smtpPass = process.env.SMTP_PASS || "rjfjqmnowgnwcpgw";
 
-      // Set up Nodemailer transporter using Naver SMTP
+      // Set up Nodemailer transporter using Daum SMTP
       const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST || 'smtp.naver.com',
+        host: process.env.SMTP_HOST || 'smtp.daum.net',
         port: parseInt(process.env.SMTP_PORT || '465', 10),
         secure: true,
         auth: {
@@ -44,7 +44,7 @@ async function startServer() {
       });
 
       // Prepare email data
-      // Note: Naver SMTP requires the 'from' address to match the authenticated user.
+      // Note: Daum SMTP requires the 'from' address to match the authenticated user.
       const mailOptions = {
         from: `"${name}" <${smtpUser}>`,
         replyTo: email,

@@ -44,7 +44,7 @@ export default function Footer() {
               </span>
             </div>
             
-            <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
+            <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               A premier sub-publishing and catalog management firm ensuring maximum value and proactive administration for global music rights in South Korea.
             </p>
 
