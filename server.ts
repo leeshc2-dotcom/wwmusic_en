@@ -29,12 +29,13 @@ async function startServer() {
     console.log(`[Contact Form Received] Name: ${name}, Email: ${email}`);
 
     try {
-      const smtpUser = process.env.SMTP_USER || "Jude.lee@wwmg.co.kr";
-      const smtpPass = process.env.SMTP_PASS || "rjfjqmnowgnwcpgw";
+      // Use the actual Gmail account that generated the app password for authentication
+      const smtpUser = process.env.SMTP_USER || "leeshc2@gmail.com";
+      const smtpPass = process.env.SMTP_PASS || "pbmtwicobufslmdx";
 
-      // Set up Nodemailer transporter using Daum SMTP
+      // Set up Nodemailer transporter using Gmail SMTP
       const transporter = nodemailer.createTransport({
-        host: process.env.SMTP_HOST || 'smtp.daum.net',
+        host: process.env.SMTP_HOST || 'smtp.gmail.com',
         port: parseInt(process.env.SMTP_PORT || '465', 10),
         secure: true,
         auth: {
@@ -44,9 +45,10 @@ async function startServer() {
       });
 
       // Prepare email data
-      // Note: Daum SMTP requires the 'from' address to match the authenticated user.
+      // Note: Gmail SMTP requires the 'from' address to match the authenticated user or be an alias.
+      // Since Jude.lee@wwmg.co.kr is configured as an alias for leeshc2@gmail.com, we can use it in 'from'.
       const mailOptions = {
-        from: `"${name}" <${smtpUser}>`,
+        from: `"${name}" <Jude.lee@wwmg.co.kr>`,
         replyTo: email,
         to: "Jude.lee@wwmg.co.kr",
         subject: `[Website Inquiry] ${subject || 'New Message'}`,
