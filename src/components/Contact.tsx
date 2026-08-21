@@ -30,17 +30,21 @@ export default function Contact() {
     setErrorMessage("");
     
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          access_key: "fa52ff4a-6ba9-4f81-b5aa-d98537db77e5",
+          ...formData,
+        }),
       });
       
       const data = await response.json();
       
-      if (response.ok) {
+      if (response.status === 200) {
         setStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
