@@ -118,19 +118,19 @@ export default function Footer() {
               <li className="flex flex-col">
                 <a href="https://www.komca.or.kr" target="_blank" rel="noopener noreferrer" className="group">
                   <span className="text-xs text-slate-300 font-bold font-sans group-hover:text-amber-500 transition-colors">Korea Music Copyright Association (KOMCA)</span>
-                  <span className="text-[10px] text-slate-500 font-mono mt-0.5 font-medium block">Mechanical & Performance Rights</span>
+                  <span className="text-xs text-slate-500 font-mono mt-0.5 font-medium block">Mechanical & Performance Rights</span>
                 </a>
               </li>
               <li className="flex flex-col">
                 <a href="https://www.fkmp.kr" target="_blank" rel="noopener noreferrer" className="group">
                   <span className="text-xs text-slate-300 font-bold font-sans group-hover:text-amber-500 transition-colors">Federation of Korean Music Performers (FKMP)</span>
-                  <span className="text-[10px] text-slate-500 font-mono mt-0.5 font-medium block">Neighboring Rights for Performers</span>
+                  <span className="text-xs text-slate-500 font-mono mt-0.5 font-medium block">Neighboring Rights for Performers</span>
                 </a>
               </li>
               <li className="flex flex-col">
                 <a href="https://www.riak.or.kr" target="_blank" rel="noopener noreferrer" className="group">
                   <span className="text-xs text-slate-300 font-bold font-sans group-hover:text-amber-500 transition-colors">Recording Industry Association of Korea (RIAK)</span>
-                  <span className="text-[10px] text-slate-500 font-mono mt-0.5 font-semibold block">Neighboring Rights for Producers</span>
+                  <span className="text-xs text-slate-500 font-mono mt-0.5 font-semibold block">Neighboring Rights for Producers</span>
                 </a>
               </li>
             </ul>
