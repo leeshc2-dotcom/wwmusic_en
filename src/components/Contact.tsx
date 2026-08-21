@@ -95,10 +95,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-sans font-extrabold text-xs text-white uppercase tracking-wider">
-                    General Inquiries
-                  </h4>
-                  <p className="mt-1 font-sans text-sm text-slate-400 font-medium group-hover:text-amber-400 transition-colors break-all sm:break-normal">
+                  <p className="font-sans text-lg sm:text-xl text-slate-200 font-semibold group-hover:text-amber-400 transition-colors break-all sm:break-normal">
                     Jude.lee@wwmg.co.kr
                   </p>
                 </div>
